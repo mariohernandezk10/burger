@@ -1,0 +1,38 @@
+<h1>Burgers!</h1>
+
+<h2>Burgers that are devoured!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless newEatenStatus}}
+      {{> burgers/block eatenKey=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Burgers that are ready to be eaten!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if newEatenStatus}}
+      {{> burgers/block eatenKey=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="slee">Devoured?</label><br>
+    <input type="radio" name="eatenKey" value="1" checked> Devoured!<br>
+    <input type="radio" name="eatenKey" value="0"> Ready to be Devoured!
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
