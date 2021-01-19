@@ -4,9 +4,15 @@
 
 <ul>
   {{#each burgers}}
-    {{#unless newEatenStatus}}
-      {{> burgers/block eatenKey=true}}
-    {{/unless}}
+  {{#if this.devoured}}
+  <li>{{this.burger_name}}
+    <button class="devour" data-id="{{this.id}}" data-newEatenStatus={{this.devoured}}>
+      EATEN!
+    </button>
+
+    <button class="delete-cat" data-id="{{this.id}}">DELETE</button>
+  </li>
+  {{/if}}
   {{/each}}
 </ul>
 
@@ -14,9 +20,15 @@
 
 <ul>
   {{#each burgers}}
-    {{#if newEatenStatus}}
-      {{> burgers/block eatenKey=false}}
-    {{/if}}
+  {{#unless this.devoured}}
+  <li>{{this.burger_name}}
+    <button class="devour" data-id="{{this.id}}" data-newEatenStatus={{this.devoured}}>
+      DEVOUR TIME!
+    </button>
+
+    <button class="delete-cat" data-id="{{this.id}}">DELETE</button>
+  </li>
+  {{/unless}}
   {{/each}}
 </ul>
 

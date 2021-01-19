@@ -1,8 +1,9 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    $(".devour").on("click", function(event) {
+    $(document).on("click", ".devour", function(event) {
       var id = $(this).data("id");
-      var boolean = $(this).data("newEatenStatus");
+      var boolean = $(this).data("neweatenstatus");
+      console.log(boolean);
   
       // this var helps the ajax to read if its true or false
       // this is used in line 16 in the ajax

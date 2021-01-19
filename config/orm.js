@@ -56,7 +56,7 @@ var orm = {
   },
   create: function(tableName, columNames, vals, cb) {
     var queryString = `INSERT INTO ${tableName} (${columNames.toString()})
-                       VALUES (${printQuestionMarks(vals.length)})`;
+                       VALUES (?, ?)`;
 
     console.log(queryString);
 
