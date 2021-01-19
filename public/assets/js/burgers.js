@@ -1,6 +1,7 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(document).on("click", ".devour", function(event) {
+      // event.preventDefault();
       var id = $(this).data("id");
       var boolean = $(this).data("neweatenstatus");
       console.log(boolean);

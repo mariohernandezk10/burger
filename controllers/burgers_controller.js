@@ -37,6 +37,7 @@ router.put("/api/burgers/:id", function(req, res) {
   });
 });
 
+
 router.delete("/api/burgers/:id", async function(req, res) {
   
   let columnName = "id";
