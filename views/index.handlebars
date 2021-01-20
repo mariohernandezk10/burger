@@ -1,13 +1,21 @@
+<div class="burger-container">
+  <div class="burger">
+    <img src="./assets/img/krabby.jpg" alt="burger">
+  </div>
+</div>
+
 <h1>Burgers!</h1>
 
-<h2>Burgers that are devoured!</h2>
+<h2>------------------------------------------------------------Burgers that have been devoured!------------------------------------------------------------</h2>
+
+
 
 <ul>
   {{#each burgers}}
   {{#if this.devoured}}
   <li>{{this.burger_name}}
-    <button class="devour" data-id="{{this.id}}" data-newEatenStatus={{this.devoured}}>
-      EATEN!
+    <button class="devour" data-id="{{this.id}}" data-neweatenstatus="0">
+      RECOVER!
     </button>
 
     <button class="delete-cat" data-id="{{this.id}}">DELETE</button>
@@ -16,13 +24,13 @@
   {{/each}}
 </ul>
 
-<h2>Burgers that are ready to be eaten!</h2>
+<h2>------------------------------------------------------------Burgers that are ready to be eaten!------------------------------------------------------------</h2>
 
 <ul>
   {{#each burgers}}
   {{#unless this.devoured}}
   <li>{{this.burger_name}}
-    <button class="devour" data-id="{{this.id}}" data-newEatenStatus={{this.devoured}}>
+    <button class="devour" data-id="{{this.id}}" data-neweatenstatus="1">
       DEVOUR TIME!
     </button>
 
