@@ -1,4 +1,4 @@
-# Cool Project
+# Eat A Burger
 ![GitHub license](https://img.shields.io/badge/license-APACHE 2.0-blue.svg)
 
 ## Description
@@ -8,7 +8,7 @@ This app allows you to submit a burger and then devour it. You can also delete i
 deploy app here: https://still-cliffs-71059.herokuapp.com/
 
 Screenshot:
-![alt text](img/SS.png)
+![alt text](assets/img/SS.png)
 
 ## Table of Contents 
 
