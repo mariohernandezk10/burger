@@ -8,7 +8,7 @@ This app allows you to submit a burger and then devour it. You can also delete i
 deploy app here: https://still-cliffs-71059.herokuapp.com/
 
 Screenshot:
-![alt text](/assets/img/SS.png)
+![alt text](public/assets/img/SS.png)
 
 ## Table of Contents 
 
