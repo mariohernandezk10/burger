@@ -46,5 +46,5 @@ N/A
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at mariohernandezk10@gmail.com. You can find more of my work at [calvincarter](https://github.com/mariohernandezk10).
+If you have any questions about the repo, open an issue or contact me directly at mariohernandezk10@gmail.com. You can find more of my work at [MarioHernandez](https://github.com/mariohernandezk10).
 
